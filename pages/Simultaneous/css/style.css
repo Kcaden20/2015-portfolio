@@ -1,0 +1,447 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: normal; 
+  }
+
+ol, ul {
+  list-style: none; }
+
+blockquote {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a img {
+  border: none; }
+ 
+
+/* =Scss Variables
+-------------------------------------------------------------- */
+/* =Global
+-------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  color: #505050;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8; 
+  height:2515px;}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-weight: 300; }
+
+a {
+  color: black; }
+
+a:hover {opacity:.5;}
+
+
+/* =Template
+-------------------------------------------------------------- */
+#wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+#main {
+  background-color: transparent;;
+  padding-top: 48px; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+ }
+
+section {
+  padding: 60px 0; }
+  section h1 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color:black;
+    background-color:none; } 
+  section p {
+    margin-bottom: 30px; }
+    section p:last-child {
+      margin-bottom: 0; }
+  section.color {
+    background-color: transparent;
+    color: black; }
+   
+   .txt {height:12vw;
+	  width:32vw;
+	  float:left;
+	  margin-bottom: 8vw;
+	}
+	   #marg { margin-left: 12vw;} 
+	  .full {height: 50vw; 
+		  width:78vw;
+		  float:left;
+		  margin: 2vw 4vw 8vw 0px;
+	  }
+	  
+	  .full2 {height: 70vw; 
+		  width:78vw;
+		  float:left;
+		  margin: 6vw 4vw 8vw 0px;
+	  }
+	  
+	   .full4 {height: 36vw; 
+		  width:78vw;
+		  float:left;
+		  margin: 2vw 4vw 8vw 0px;
+	  }
+	
+  }
+  .prjwrap {
+	  width:100%
+  }
+h2 {color:black; 
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1;
+	clear:both;
+	vertical-align: baseline;
+	margin: 0;
+    position: absolute;
+    top: 107%;
+    left: 17%;
+    margin-right: -50%;
+    font-size: 16px;
+	
+	
+}
+#work {position:relative;
+	top:0vw;
+}
+#wrk {
+}
+
+#slideshow { 
+}
+
+#slideshow > div {  
+}
+#one {z-index: 10;
+	position:absolute;
+}
+#two {z-index:7;
+	position:absolute;
+}
+#three {z-index: 6;
+	position:absolute;
+}
+#four {z-index: 3;}
+
+#par {background-color: transparent;
+	line-height: 2.3vw;
+	font-size: 1.3vw;
+}
+
+   .prj {
+	  width:23vw;
+	  background-color: transparent;
+	  float:left;
+	  margin:0px 0px 0px 2vw;
+  }
+#caption {background-color:transparent;
+	text-align: center;
+	position:relative;
+	top:-0px;
+}
+#caption1 {background-color:transparent;
+	text-align: center;
+	position:relative;
+	top:1vw
+	}
+#mtop {margin-top:4vw;}
+		#mtop2 {margin-top:6vw;}
+.cut {}
+.bigger {width: 50vw}  
+/* =Info Bar
+-------------------------------------------------------------- */
+#info-bar {
+  background-color: #3cb5f9; }
+  #info-bar a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 10px; }
+    #info-bar a:hover {
+      background-color: black; }
+  #info-bar span.all-tutorials,
+  #info-bar span.back-to-tutorial {
+    display: block;
+    width: 50%; }
+  #info-bar span.all-tutorials {
+    float: left;
+    text-align: left; }
+  #info-bar span.back-to-tutorial {
+    float: right;
+    text-align: right; }
+
+/* =Header
+-------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: 109px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;}
+  header h1#logo {
+    display: inline-block;
+    height: 58px;
+    float: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    color: black;
+    font-weight: 300;
+    margin: 36px 0px 0px 0px;
+    text-decoration: none;
+    background-color: white;}
+    #logo:hover {background-color:none;
+	    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+	    
+    }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav a {
+      line-height: 150px;
+      margin-left: 20px;
+      color: black;
+      font-weight: 500;
+      font-size: 17px;
+      background-color: white;
+      text-decoration: underline;
+ }
+      header nav a:hover {
+	    background-color: none; 
+        opacity: .5;
+        }
+  header.smaller {
+    height: 50px; }
+    header.smaller h1#logo {
+      width: 175px;
+      height: 29px;
+      font-size: 30px;
+      margin: 16px auto; }
+    header.smaller nav a {
+      line-height: 75px; 
+      }
+     .icon {height:150px;
+	     width:150px;
+	     position:fixed;
+	     right:8vw;
+	     bottom:0vw;
+	     z-index:1;
+	     padding:0px;
+     }
+     img {margin: 0px auto;
+	     display:block;
+	     width:100%;
+	     padding:0px 0px 0px 0px;
+     }
+     
+     
+     .desc {margin: 0;
+    position: absolute;
+    top: 92%;
+    left: 17%;
+    margin-right: -50%;
+    width:70%;
+    word-wrap: break-word;
+    text-align: center;
+     }
+     
+     #no {background-color:transparent;
+	     text-decoration: none;
+     }
+     
+     li {display:inline-block;
+	     float:left;
+	     margin-right: 20px;
+	     text-decoration: none;
+     }
+     
+     li:hover {background-color: none;}
+     
+     #stop {}
+     #stop:hover {background-color: transparent;}
+
+/* =Footer
+-------------------------------------------------------------- */
+/* =Extras
+-------------------------------------------------------------- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media all and (max-width: 660px) {
+  /* =Header
+  -------------------------------------------------------------- */
+  body {height: 100%
+	  
+  }
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 20px auto;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+    }
+  header nav {
+    display: block;
+    float: none;
+    height: 50px;
+    text-align: center;
+    margin: -22px auto; }
+    header nav a {
+      line-height: 50px;
+      margin: 0 10px; }
+  header.smaller {
+    height: 87px; }
+    header.smaller h1#logo {
+      height: 40px;
+      line-height: 40px;
+      font-size: 30px; }
+    header.smaller nav {
+      height: 35px; }
+      header.smaller nav a {
+        line-height: 35px; } 
+     img {padding: 0px 0px 50px 0px}
+    .txt {width:75vw;
+	    height:36vw;
+	    
+    }
+    #marg {margin-left: 4vw}
+    #work {position:relative;
+	top:20vw;}
+	#wrk {
+}
+.desc {font-size: 4vw;}
+#bttm {padding-bottom: 40px;}
+#par {font-size: 3.4vw;
+	line-height: 4.2vw
+}
+#caption {margin-top: -45px;
+	font-size: 4vw;
+}
+#caption1 {font-size: 4vw;
+	top:-35px;}
+ .full {height: 70vw; 
+		  width:78vw;
+		  float:left;
+		  margin: 0px auto;
+	
+	  }
+ .full2 {height: 70vw; 
+		  width:106vw;
+		  float:left;
+		  margin: 0px auto;
+		  position:relative;
+		  left:-55px;
+	  }
+	  .prj {
+	width:74vw; 
+	margin-right: 4vw;
+	overflow: hidden;
+	
+	}
+	#mtop {margin-top:10vw;}
+		#mtop2 {margin-top:4vw;}
+
+	
+.cut {height:60vw}
+.bigger {width: 78vw}  
+
+
+
+}
+
+	  
+
+    
+    
+@media all and (max-width: 600px) {
+  .container {
+    width: 80%; }
+
+  #info-bar a {
+    display: block; }
+  #info-bar span.all-tutorials,
+  #info-bar span.back-to-tutorial {
+    width: 100%; }
+  #info-bar span.all-tutorials,
+  #info-bar span.back-to-tutorial {
+    float: none;
+    text-align: center; }
+  #info-bar span.all-tutorials {
+    border-bottom: solid 1px #0793e2; } }
+
+   
+    @media (max-width:340px) {
+	.icon {display:none;}
+	header h1#logo {font-size:40px;}
+	header nav a {font-size: 15px;}
+	
+}
+ 
+    

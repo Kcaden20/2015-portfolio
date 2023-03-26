@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="The personal website of Graphic Designer, Kevin Cadena " />
+<meta http-equiv="author" content="Kevin Cadena">
+<meta name="keyword" content="Graphic Designer, Graphic Design, RISD, GD, Typography, Kevin, Cadena, Kevin Cadena, Freelance, Artist">
+<title>Kevin Cadena</title>
+
+
+<link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon" >
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+    
+<!-- js -->
+<script src="js/classie.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 100,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<script> $(function() {
+
+   $("body").mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 30);
+    
+      event.preventDefault();
+
+   });
+
+});
+</script>
+<script> var titles = [
+    'Hello I&#39;m Kevin Cadena',
+    'Kevin Cadena',
+    'Kevin Cadena',
+    'Kevin Cadena'
+];
+
+$(window).scroll(function(){
+    var pos = $(this).scrollTop();
+     if(pos < 300) {
+        $('.top').slideUp().text(titles[0]);
+    }
+    
+    if(pos > 150) {
+        $('#logo').slideDown();
+    }
+    if(pos > 150) {
+        $('#logo').text(titles[1]);
+    }
+    if(pos > 150) {
+        $('#logo').text(titles[2]);
+    }
+    if(pos > 150) {
+        $('#logo').text(titles[3]);
+    }
+});</script>
+<script>
+	$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1)
+    .next()
+    .fadeIn(1)
+    .end()
+    .appendTo('#slideshow');
+},  4500);
+ </script>
+</head>
+
+
+
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+       <a href="index.html"> <h1 id="logo">
+         Hey, I'm Kevin! 
+        </h1></a>
+        <nav>
+            <a href="#first">Work</a>
+            <a href="#second">About</a>
+            <a href="#third">Contact</a>
+        </nav>
+    </div>
+</header><!-- /header -->
+
+<div id="main">
+</div>
+	
+    <div id="content">
+        <section>
+            <div class="container" id="first">
+                <h1><strong>I've made...</strong></h1>		
+               <div class="prjwrap">
+                <div class="prj"><a href="pages/sushitimeco/index.html"><img class="imag" src="img/STCO.png" alt="STCO"><h1 class="desc" id="no">Sushi Time Co. <br/> <small><small><small>Apparel - Web - Illustration</small></small></small></h1></a></div>
+                <div class="prj"><a href="pages/onone/index.html"><img class="imag" src="img/Onone.png" alt="Onone"><h1 class="desc" id="no">OnOne UI<br/><br/> <small><small><small>UI/UX</small></small></small></h1></a></div>
+                <div class="prj"><a href="pages/abwxd/index.html"><img class="imag" src="img/ABWxD.png" alt="ABWxD"> <h1 class="desc" id="no"> ABWxD 2014 <br/><br/> <small><small><small>Branding - Print</small></small></small></h1></div>
+                <div class="prj"><a href="pages/freedom/index.html"><img class="imag" src="img/FFF.png" alt="FFF"><h1 class="desc" id="no">Design For Good<br/><small><small><small>Branding - Web - UI/UX</small></small></small></h1></div>
+               <div class="prj"><a href="pages/canyouread/index.html"><img class="imag" src="img/canu.png" alt="fnwithaki"> <h1 class="desc" id="no">Can you read in Color? <br/><br/> <small><small><small>Layout- Analysis</small></small></small> </h1></a></div> 
+                                <div class="prj"><a href="pages/forgotten/index.html"> <img  class="image" src="img/screen.png"> <h1 class="desc" id="no"> The Forgotten Studio <br/> <small><small><small>Mapping - Screenprint</small></small></small></h1> </div>
+                <div class="prj"><a href="pages/manual/index.html"><img class="imag" src="img/STBK.png" alt="fnwithaki"> <h1 class="desc" id="no">STCO: A Silkscreening Manual  <br/> <small><small><small>Layout - Iconography</small></small></small></h1></a></div>
+                <div class="prj"><a href="pages/Simultaneous/index.html"><img class="imag" src="img/simcon.png" alt="FFF"><h1 class="desc" id="no"> Simultaneous Contrast<br/> <small><small><small><br/>Product - Educational</small></small></small></h1></a></div>
+               </div>
+            </div>
+        </section>
+        <section class="color">
+            <div class="container" id="wrk">
+                <h1 ><strong>Though I'm currently working on...</strong></h1>
+                <div class="prjwrap">
+                 <a href="http://www.hackatbrown.org/"><div class="prj"><img class="imag" src="img/H@B.png" alt="H@B"><h1 class="desc" id="no">Hack@Brown <br/> <small><small><small>Branding - Web - Print</small></small></small></h1></div></a>
+                <div class="prj"> <a href="http://sexualmisconduct.risd.edu/"><div class="prj"><img class="imag" src="img/RIXD.png" alt="H@B"><h1 class="desc" id="no">RISD Title IX <br/> <small><small><small>Branding - Print - Social</small></small></small></h1></div></a>
+                </div>
+            </div>
+        </section>
+        <section class="color">
+            <div class="container" id="work">
+                <h1 id="second"><strong>A little bit about me.  </strong></h1>
+                <h1 id="par">Currently based out of Providence, RI and passionate about design and curious about the world, I always seek to continue growing and developing as a graphic designer and taking up new design challenges. I love to make things that are interdisciplinary in nature and create an experience for people to interact with. On my free time, I enjoy being a workshop instructor for <a href="http://www.risdquickies.org/"> RISD Quickies</a> , being involved with freshman through <a href="http://csi.risd.edu/orientation/risd-360/">RISD 360</a>, and practicing <a href="http://en.wikipedia.org/wiki/Capoeira">capoeira.</a> </h1>
+                
+            </div>
+            
+        </section>
+        <section class="color">
+	        <div class="container" id="work">
+                <h1 id="third"><strong>Get in touch!</strong></h1>
+                <h1 id="par">
+                If you would like to get in contact, feel free to use any of the platforms below. I love meeting new people!
+                
+                <ul><br/>
+	                <a href="http://www.linkedin.com/in/kevincadena"><li>LinkedIn</li></a>
+	                <a href="http://portfolios.risd.edu/kevincadena"><li>RISD Portfolios</li></a>
+	                <a href="https://twitter.com/KevinMCadena"><li>Twitter</li></a>
+	                
+<a href="mailto:kcadena@risd.edu"><li>E-mail</li></a>
+                </ul>
+                </h1>
+                <h1 id="par">You can also take a look at my resume <a href="img/KEVINCADENA_RESUME.pdf" download="filename">here </a></h1>
+                
+	        </div>
+	   
+	        
+        </section>
+        
+           </div>
+           
+</div><!-- #main -->
+
+	  <h1 class="foot" id="par"><small><br/><br/><br/><br/><br/><br/> Kevin Cadena 2015</small></h1>
+
+
+</div><!-- /#wrapper -->
+
+
+</body>
+</html>

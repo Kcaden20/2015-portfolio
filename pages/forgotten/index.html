@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+<title>Studio </title>
+
+<link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon" >
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/lightbox.css" />    
+<!-- js -->
+<script src="js/classie.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 100,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<script> $(function() {
+
+   $("body").mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 30);
+    
+      event.preventDefault();
+
+   });
+
+});
+</script>
+</head>
+
+
+
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+       <a href="index.html"> <h1 id="logo">
+         Forgotten Studio
+        </h1></a>
+        <nav>
+            <a href="../canyouread/index.html">&lt;Color</a>
+            <a href="../../index.html">Home</a>
+            <a href="../manual/index.html">Manual&gt;</a>
+        </nav>
+    </div>
+</header><!-- /header -->
+
+<div id="main">
+	
+    <div id="content">
+        <section>
+            <div class="container">
+                <h1><strong>About</strong></h1>		
+	               <div class="full"><h1 id="par">A mapping of the 3rd floor silkscreen studio. The title "The Forgotten Studio" refers to all of the old screens left in the studio. Abandoned and unreclaimed after they were used. Taking all of these screens, I gave them renewed purpose not only through printing with them again to create something new but also exhibiting the screens themselves to allow people to pick through them and see the culture and story that the 3rd floor studio as had. </h1>
+	               
+		           <div>
+			           <div class="prj" id="mtop"><a class="imgmargin" href="img/Shirt1.png" data-lightbox="FIRST"><img class="imag"src="img/Shirt1.png" alt="Shirt1"></a></div>
+		           <div class="prj" id="mtop" id="marg"><a class="imgmargin" href="img/Shirt1-2.png" data-lightbox="FIRST"><img class="imag" src="img/Shirt1-2.png" alt="Shirt1-2"></a></div>
+		           <div class="prj" id="mtop"><a class="imgmargin" href="img/shirt2-1.png" data-lightbox="FIRST"><img src="img/shirt2-1.png"></a></div>
+		           <h1 id="caption1"><small>The studio space</small></h1>
+		
+		           </div>  
+	       <div>
+		              <div class="prj" id="mtop"><a class="imgmargin" href="img/shirt2-2.png" data-lightbox="FIRST"><img src="img/shirt2-2.png" alt="shirt2-2"></a></div>
+		           
+	               <div class="prj" id="mtop"><a class="imgmargin" href="img/shirt3-1.png" data-lightbox="FIRST"><img src="img/shirt3-1.png" alt="shirt3-1"></a></div>
+	               <div class="prj" id="mtop"><a class="imgmargin" href="img/shirt-3-2.png" data-lightbox="FIRST"><img src="img/shirt-3-2.png"></a></div>
+	               <h1 id="caption1"><br/><small>The Prints</small></h1>
+	    
+	       </div>
+	               
+	               <div class="full2"><a class="imgmargin" href="img/ipad2.png" data-lightbox="FIRST"><img class="bigger" src="img/ipad2.png"></a>
+		               <h1 id="caption1"></h1>
+	               <a class="imgmargin" href="img/ipad.png" data-lightbox="FIRST"><img class="bigger" id="mtop" src="img/ipad.png"></a>
+	               <a class="imgmargin" href="img/ipad3.png" data-lightbox="FIRST"><img class="bigger" id="mtop" src="img/ipad3.png"></a>
+	               <h1 id="caption"><br/><small>Details</small></h1>
+	               </div>
+	               
+	               <div class="full2" id="mtop"><a class="imgmargin" href="img/ipad4.png" data-lightbox="FIRST"><img class="bigger" src="img/ipad4.png"></a>
+		               <h1 id="caption1"><small>Artifact of the Printing Process</small></h1>
+	               <a class="imgmargin" href="img/ipad5.png" data-lightbox="FIRST"><img class="bigger" id="mtop" src="img/ipad5.png"></a>
+	               <a class="imgmargin" href="img/ipad6.png" data-lightbox="FIRST"><img class="bigger" id="mtop" src="img/ipad6.png"></a>
+	                <h1 id="caption"><br/><small>Details</small></h1>
+	              
+	               </div>
+	               
+	               <div class="full3" id="mtop"><a class="imgmargin" href="img/ipad7.png" data-lightbox="FIRST"><img class="bigger" src="img/ipad7.png"></a>
+	               <a class="imgmargin" href="img/ipad8.png" data-lightbox="FIRST"><img class="bigger" id="mtop" src="img/ipad8.png"></a>
+	               <h1 id="caption"><br/><small>Designs on screens</small><br/><br/> <small><small> Kevin Cadena 2014 </small></small></h1>
+	               </div>
+	               
+	               
+	              
+	               
+		           </div>
+		           
+               </div>
+               
+            </div>
+            
+        </section>
+           </div>
+</div><!-- #main -->
+
+
+
+
+</div><!-- /#wrapper -->
+
+
+</body>
+</html>
